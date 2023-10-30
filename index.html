@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Audio Vista</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="./IMAGES/logo.jpg" height="80" width="80" alt="">
+    </div>
+    <div class="search-button" id="search-button">
+        <button onclick="toggleSearchBox()">Search</button>
+    </div>
+
+    <!-- Search box container -->
+    <div class="search-box-container" id="search-box-container">
+        <input type="text" id="search-box" placeholder="Search for products">
+        <button onclick="performSearch()">Go</button>
+    </div>
+    <!-- Add a section to display search results -->
+    <section id="search-results">
+        <h2>Search Results</h2>
+        <ul id="results-list"></ul>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-icons">
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
+</header>
+<section id="home">
+    <!-- Parallax scrolling background -->
+    <div class="parallax"></div>
+    <h1>Welcome to Audio Vista</h1>
+    <p>Discover the Best in Audio</p>
+    <a href="#services" class="cta-button">Shop Now</a>
+</section>
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service" id="online-store">
+        <img src="./IMAGES/service1.jpg" alt=""height="900"width="800">
+        <!-- Add an ID to the Online Store service for JavaScript -->
+        <h3>Online Store</h3>
+        <p>This service allows you to explore our product catalog, add items to your cart, and make a purchase.</p>
+        <button onclick="window.location.href = 'online_store.html';">Open Online Store</button>
+
+    </div>
+    <!-- Remove the Service 1 section and its content -->
+    <div class="service">
+        <img src="./IMAGES/service2.png" alt="Service 2">
+        <h3>Product Consultation</h3>
+        <p>Our professional audio consultants provide expert advice and recommendations for your audio needs.</p>
+        <button onclick="contactEmployee()">Contact Us</button>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>At Audio Vista, we are passionate about delivering an unparalleled audio experience to society.
+            Our journey began with a commitment to providing not just sound but a symphony of emotions through our audio solutions.
+            We believe that high-quality audio is not just heard; it's felt, and it has the power to transform ordinary moments into
+            extraordinary ones. Our mission is clear: to enrich lives through the magic of sound. We achieve this by crafting audio products
+            with uncompromising build quality, ensuring their longevity and reliability. Every product we create is a testament to our dedication
+            to excellence and our belief that society deserves nothing but the best. What sets us apart is our unwavering commitment to innovation
+            and the pursuit of perfection. Our team of audio enthusiasts, engineers, and designers collaborates to push the boundaries of what's possible,
+            striving for audio excellence in every product we offer. As we continue our journey, we invite you to experience the difference that Audio Vista
+            can make in your life. Discover the harmony, precision, and immersive audio quality that define our brand. Join us in our pursuit of a world where
+            great audio is not just an accessory but an essential part of everyday life. Thank you for choosing Audio Vista as your partner in the pursuit of
+            audio excellence.</p>
+        <h3>Our Team</h3>
+        <div class="team-member">
+            <img src="./IMAGES/team1.jpg" alt="John Doe">
+            <h4>John Doe</h4>
+            <p>Co-Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="./IMAGES/team2.jpeg" alt="Jane Smith">
+            <h4>Jane Smith</h4>
+            <p>Head of Customer Support</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, please feel free to contact us using the form below or our contact details:</p>
+
+    <div class="contact-details">
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><strong>Address:</strong> Krishna Rajendra Rd,Bengaluru, Karnataka 560004</p>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <p><strong>Email:</strong> info@audiovista.com</p>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <p><strong>Phone:</strong> +918082976156</p>
+        </div>
+    </div>
+
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<footer>
+    <p>&copy; 2023 Audio Vista</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Online Store - Audio Vista</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"> <!-- Link to the home page -->
+            <img src="./IMAGES/logo.jpg" height="80" width="80" alt="">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
+            <li><a href="online_store.html">Online Store</a></li>
+            <script src="./js/script.js"></script>
+        </ul>
+    </nav>
+</header>
+
+<section id="online-store">
+    <h2>Online Store</h2>
+    <div class="search-button" id="search-button">
+        <button onclick="toggleSearchBox()">Search</button>
+    </div>
+
+    <!-- Search box container -->
+    <div class="search-box-container" id="search-box-container">
+        <input type="text" id="search-box" placeholder="Search for products">
+        <button onclick="performSearch()">Go</button>
+    </div>
+    <!-- Add a section to display search results -->
+    <section id="search-results">
+        <h2>Search Results</h2>
+        <ul id="results-list"></ul>
+    </section>
+    <div class="product-container">
+        <div class="product">
+            <img src="./IMAGES/audio_device1.jpeg" alt="AudioVista 5000" height="300" width="300">
+            <h3>AudioVista 5000</h3>
+            <p>Better Sound Quality with ENC Technology.</p>
+            <p>Price: $199.99</p>
+            <button onclick="addToCart('AudioVista 5000', 199.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./IMAGES/audio_device2.png" alt="AudioVista Ferrari edition 121" height="300" width="300">
+            <h3>AudioVista Ferrari edition 121</h3>
+            <p>The Best Combo For "BASS" and Sound "Quality".</p>
+            <p>Price: $149.99</p>
+            <button onclick="addToCart('AudioVista Ferrari edition 121', 149.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./IMAGES/audio_device3.png" alt="Airdopes 141" height="300" width="300">
+            <h3>Airdopes 141</h3>
+            <p>Long lasting batery".</p>
+            <p>Price: $169.99</p>
+            <button onclick="addToCart('AudioVista Ferrari edition 121', 169.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="./IMAGES/audio_device4.png" alt="AudioVista 3500" height="200" width="200">
+            <h3>AudioVista 3500</h3>
+            <p>Powerful Experience with sound.</p>
+            <p>Price: $179.99</p>
+            <button onclick="addToCart('AudioVista 5000', 179.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./IMAGES/audio_device5.jpeg" alt="Vista3 Blue edition" height="300" width="300">
+            <h3>Vista3 Blue edition</h3>
+            <p>"First time with Titatnium build".</p>
+            <p>Price: $249.99</p>
+            <button onclick="addToCart('AudioVista Ferrari edition 121', 249.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./IMAGES/audio_device6.png" alt="AudioVista Ferrari edition 121" height="300" width="300">
+            <h3>AudioVista 1000</h3>
+            <p>"ENX plus++".</p>
+            <p>Price: $103.99</p>
+            <button onclick="addToCart('AudioVista Ferrari edition 121', 103.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="checkout">
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Audio Vista</p>
+</footer>
+</body>
+</html>
