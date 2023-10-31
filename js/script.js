@@ -1,4 +1,4 @@
-// JavaScript can be used to create interactive effects, like mouse parallax
+
 const parallax = document.querySelector('.parallax');
 
 window.addEventListener('scroll', function () {
@@ -19,15 +19,15 @@ function checkout() {
 function contactEmployee() {
     alert('Please fill out the contact form, and our employee will get in touch with you shortly.');
 }
-// JavaScript to open the online store in a new window
+
 function openOnlineStore() {
-    // Define the URL of the online store page
-    const onlineStoreURL = 'online-store.html'; // Change this to the actual URL
+
+    const onlineStoreURL = 'online-store.html'; 
 
     // Open a new window
     window.open(onlineStoreURL, '_blank');
 }
-// Initialize an empty shopping cart
+
 const cart = [];
 
 // Function to add items to the cart
@@ -58,12 +58,12 @@ const searchBar = document.getElementById("search-bar");
 // Function to toggle the search bar
 function toggleSearchBar() {
     searchBar.classList.toggle("active");
-    searchBar.focus(); // Automatically focus on the search input field when the bar is opened
+    searchBar.focus(); 
 }
 
-// Attach a click event to the search button
+
 searchButton.addEventListener("click", toggleSearchBar);
-// JavaScript functions for search functionality
+
 
 // Function to toggle the visibility of the search box
 function toggleSearchBox() {
@@ -76,8 +76,7 @@ function performSearch() {
     const searchInput = document.getElementById("search-box");
     const searchTerm = searchInput.value;
 
-    // You can implement your search logic here, e.g., filtering products based on the search term
-    // For now, let's just alert the search term
+
     alert("Searching for: " + searchTerm);
 }
 // Function to perform the search and display results
@@ -85,8 +84,7 @@ function performSearch() {
     const searchInput = document.getElementById("search-box");
     const searchTerm = searchInput.value;
 
-    // You can implement your search logic here, e.g., filtering products based on the search term
-    // For demonstration purposes, we'll just simulate a search with sample data.
+
     const products = [
         { name: "AudioVista 5000", description: "Better Sound Quality with ENC Technology.", price: 199.99 },
         { name: "AudioVista Ferrari edition 121", description: "The Best Combo For 'BASS' and Sound 'Quality'.", price: 149.99 },
@@ -97,7 +95,7 @@ function performSearch() {
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    // Display the search results in the HTML
+
     const resultsList = document.getElementById("results-list");
     resultsList.innerHTML = ""; // Clear previous results
 
